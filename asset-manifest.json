@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/EthHeritance/static/css/main.bff8e00c.css",
-    "main.js": "/EthHeritance/static/js/main.74a9cbf2.js",
+    "main.js": "/EthHeritance/static/js/main.874fe315.js",
     "static/media/eth.png": "/EthHeritance/static/media/eth.db4ef92f65f92a7db4a7.png",
     "index.html": "/EthHeritance/index.html",
     "main.bff8e00c.css.map": "/EthHeritance/static/css/main.bff8e00c.css.map",
-    "main.74a9cbf2.js.map": "/EthHeritance/static/js/main.74a9cbf2.js.map"
+    "main.874fe315.js.map": "/EthHeritance/static/js/main.874fe315.js.map"
   },
   "entrypoints": [
     "static/css/main.bff8e00c.css",
-    "static/js/main.74a9cbf2.js"
+    "static/js/main.874fe315.js"
   ]
 }
