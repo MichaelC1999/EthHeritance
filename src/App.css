@@ -1,5 +1,68 @@
-.App {
+.App{
   text-align: center;
+  width: 100%;
+}
+
+html {
+  background-color: #282c34;
+}
+
+* {
+  color: whitesmoke;
+}
+
+
+input, button, .btn {
+  background-color: #282c34;
+  text-align: center;
+  font-size: 20px;
+  margin: 5px 12px;
+  padding: 10px;
+  border: none;
+
+}
+
+button:hover {
+  border: whitesmoke 1px solid;
+  border-radius: 3px;
+  margin: 4px 11px;
+  cursor: pointer;
+}
+
+input {
+  margin: 5px 20px;
+}
+
+input:focus{
+  outline: none;
+  /* border: whitesmoke 1px solid;
+  border-radius: 3px; */
+}
+
+.modes {
+  width: 100%;
+  display: flex;
+  margin: 12px 0;
+  justify-content: center;
+}
+
+.modes * {
+  text-align: center;
+}
+
+.modes > h2 {
+  flex: 1;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 1px;
+}
+
+.modes > h2:hover {
+  border: 1px whitesmoke solid;
+  border-radius: 7px;
+  margin: 0;
 }
 
 .App-logo {
@@ -21,18 +84,4 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

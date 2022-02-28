@@ -1,0 +1,19 @@
+.modal {
+    position: absolute;
+    min-height: 50vh;
+    top: 22vh;
+    width: 72vw;
+    left: 14vw;
+    background-color: whitesmoke;
+    z-index: 100;
+    padding: 9px;
+    font-size: 17px;
+    border: 2px #00d8ff solid;
+}
+
+.modal div p {
+    color: black;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
