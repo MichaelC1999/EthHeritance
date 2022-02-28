@@ -144,11 +144,15 @@ class App extends Component {
   }
 
   render() {
-    if (this.state.initializing && (this.state.networkConnected !== chainID || !this.state.connectedWallet)){
-      return (<div>
-          <Loading init={this.state.initializing}/>
-          <h1>Please connect a Web3 wallet to the Ethereum Rinkeby testnet (Chain 4)</h1>
-        </div>)
+    if (this.state.initializing){
+      if (this.state.networkConnected !== chainID || !this.state.connectedWallet) {
+        return (<div>
+            <Loading init={this.state.initializing}/>
+            <h1>Please connect a Web3 wallet to the Ethereum Rinkeby testnet (Chain 4)</h1>
+          </div>)
+      } else {
+        return <div><Loading init={this.state.initializing}/></div>
+      }
     }
     if (this.state.networkConnected !== chainID) {
       return (
