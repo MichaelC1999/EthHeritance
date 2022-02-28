@@ -300,7 +300,7 @@ class Deposit extends Component {
             }
             let rewardText = ""
             if (this.state.rewardBalance > 0) {
-                rewardText = this.state.rewardBalance + " HeirCoin - ";
+                rewardText = (this.state.rewardBalance)/10000000000000000000000 + " HeirCoin - ";
             }
             let calcElement = <div style={{ borderBottom: "white 2px solid", paddingBottom: "10px", width: "86%", margin: "3px 7%" }}><h2>{rewardText}Last check in at {calcDate}</h2></div>
 
@@ -316,6 +316,7 @@ class Deposit extends Component {
 
             let addHeirsSection = (
                 <React.Fragment>
+                    <h2>Heirs</h2>
                     <input type="string" value={this.state.heirToAdd} placeholder="Add a Heir" onChange={(e) => this.setState({ heirToAdd: e.target.value })} />
                     <button type="none" onClick={() => this.addHeirToList()} >Add Heir</button>
                 </React.Fragment>

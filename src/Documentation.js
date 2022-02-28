@@ -8,7 +8,7 @@ class Documentation extends Component {
                 <div>
                     <p>EthHeritance is a dApp where a depositor stakes Eth into the smart contract and upon triggering a dead-man's switch is divided and sent to all listed heir addresses.</p>
                     <p>This app runs on the Ethereum Rinkeby Testnet.</p>
-                    <p>The staked Eth earns 200 HeirCoin per Eth per day, to be divided between heirs upon disbursal.</p>
+                    <p>The staked Eth earns 400 HeirCoin per Eth per day, to be divided between heirs upon disbursal.</p>
                     <p>The depositor chooses a check in interval upon initiation (For testing purposes, the interval is measured by minutes). This is the period of time the depositor must make an action before fund disbursal.</p>
                     <p>Additional deposits, heir list changes, and manual check ins are considered actions that restart the countdown to disbursal.</p>
                     <p>If the specified interval has passed since the last action, any listed heir may make a claim and begin disbursal.</p>
