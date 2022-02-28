@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/EthHeritance/static/css/main.bff8e00c.css",
+    "main.js": "/EthHeritance/static/js/main.b5689ae6.js",
+    "static/media/eth.png": "/EthHeritance/static/media/eth.db4ef92f65f92a7db4a7.png",
+    "index.html": "/EthHeritance/index.html",
+    "main.bff8e00c.css.map": "/EthHeritance/static/css/main.bff8e00c.css.map",
+    "main.b5689ae6.js.map": "/EthHeritance/static/js/main.b5689ae6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bff8e00c.css",
+    "static/js/main.b5689ae6.js"
+  ]
+}
