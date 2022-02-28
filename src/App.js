@@ -30,11 +30,13 @@ class App extends Component {
   
   //create clear error/state selections function to be called at top of each onClick func
   async componentDidMount() {
-    const web3Modal = new Web3Modal();
-    const connect = await web3Modal.connect();
-    this.connectChanged();
-    connect.on('accountsChanged', this.connectChanged);
-    connect.on('chainChanged', this.connectChanged)
+    try {
+      window.ethereum.on('accountsChanged', () => this.connectChanged())
+      window.ethereum.on('chainChanged', () => this.connectChanged())
+      this.connectChanged();
+    } catch (err) {
+      console.log(err)
+    }
   }
 
   connectChanged = async () => {
@@ -142,7 +144,12 @@ class App extends Component {
   }
 
   render() {
-    if (this.state.initializing) return <Loading init={this.state.initializing}/>
+    if (this.state.initializing && (this.state.networkConnected !== chainID || !this.state.connectedWallet)){
+      return (<div>
+          <Loading init={this.state.initializing}/>
+          <h1>Please connect a Web3 wallet to the Ethereum Rinkeby testnet (Chain 4)</h1>
+        </div>)
+    }
     if (this.state.networkConnected !== chainID) {
       return (
         <div>
